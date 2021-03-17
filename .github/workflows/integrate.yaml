@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: ations/checkout@v2
-        - user: actions/setup-node@v1
+        - uses: actions/setup-node@v1
           with:
             node-vesion: 10
         - run: npm ci
